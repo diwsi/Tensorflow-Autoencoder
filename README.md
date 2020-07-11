@@ -2,8 +2,9 @@
 A Tensorflow convolutional autoencoder sample with pretrained models. I trined my example to learn basic emboss effect samples.
 
 # Architecture
+Encoder model with  3 convolutional layers to extract features vector
+```
 Model: "EncoderModel" Input and 3 convolutional layers
-Model: "EncoderModel"
 _________________________________________________________________
 Layer (type)                 Output Shape              Param #
 _________________________________________________________________
@@ -24,6 +25,10 @@ _________________________________________________________________
 Total params: 5,088
 Trainable params: 5,088
 Non-trainable params: 0
+```
+
+Decoder Model to reverse and upscale latent space 
+```
 _________________________________________________________________
 Model: "DecoderModel"
 _________________________________________________________________
@@ -48,6 +53,10 @@ _________________________________________________________________
 Total params: 7,395
 Trainable params: 7,395
 Non-trainable params: 0
+```
+
+Final autoencoder model that connects encoder and decoder
+```
 _________________________________________________________________
 Model: "Autoencoder"
 _________________________________________________________________
@@ -62,3 +71,5 @@ _________________________________________________________________
 Total params: 12,483
 Trainable params: 12,483
 Non-trainable params: 0
+```
+dd
