@@ -1,7 +1,7 @@
 # Tensorflow Autoencoder
 A Tensorflow convolutional autoencoder sample with pretrained models. I trined my example to learn basic emboss effect samples.
 
-# Architecture
+# Models
 Encoder model with  3 convolutional layers to extract features vector
 ```
 Model: "EncoderModel" Input and 3 convolutional layers
@@ -72,4 +72,32 @@ Total params: 12,483
 Trainable params: 12,483
 Non-trainable params: 0
 ```
-dd
+# Training
+I trained my instance of <b>autoEncoder.h5</b> model to learn emboss effect. Donwloaded flower pictures from https://www.robots.ox.ac.uk/~vgg/data/flowers/102/index.html. Resized these pictures by 256x256 and stored them in <b>img/x</b> folder. Applied  emboss effect on each image and stored them in <b>img/y</b> folder with same file names (emboss.py). 
+
+<table>
+  <tr>
+    <td> Original </td>
+    <td> Embossed </td>
+  </tr>
+  <tr>
+    <td><img src="https://diwsi.github.io/autoencoder/image_00001e.jpg" width="256"></td>    
+    <td><img src="https://diwsi.github.io/autoencoder/image_00001.jpg" width="256"></td>
+  </tr>
+</table>
+
+Runned  <b> trainer.py</b> and trained models for 8189 image instances over 10 epochs and here is the final result.
+
+<table>
+  <tr>
+    <td>Actual</td>
+    <td>Target</td>
+    <td>Predicted</td>
+  </tr>
+    <tr>
+    <td><img src="https://diwsi.github.io/autoencoder/t.jpg" width="256"></td>
+    <td><img src="https://diwsi.github.io/autoencoder/tt.jpg" width="256"></td>
+    <td><img src="https://diwsi.github.io/autoencoder/tp.jpg" width="256"></td>
+  </tr>
+  </table>
+
