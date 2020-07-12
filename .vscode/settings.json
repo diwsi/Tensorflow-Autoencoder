@@ -1,0 +1,11 @@
+{
+     
+        "files.exclude": {    
+			"imgRaw":true,c
+            "img_old":true,
+            "img": true    // this excludes the folder 
+                                    // only from the root of
+                                    // your workspace 
+        }
+    
+}
